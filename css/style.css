@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(https://t4.ftcdn.net/jpg/05/12/30/57/240_F_512305724_bcgxLZOJs8DL42jiLQlrj3X3KNPbmc4t.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    opacity: 1;
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    min-height: 100vh;
+}
+.login-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    width: 400px;
+    margin: auto;
+    margin-top: 180px;
+    overflow: hidden;
+}
+.login-container h2 {
+    text-align: center;
+}
+
+.image-container {
+    flex: 1;
+    background: url('IMAGENES/imagen1.jpg') center/cover;
+}
+
+.form-container {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+
+.form-group {
+    margin: 9px 0;
+    width: 280px;
+}
+.logo {
+    display: flex;
+    margin: auto;
+}
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.olvidarcontraseña {
+    color: red;
+    margin-top: -4px;
+   
+    
+}
+/* Estilos para el dashboard */
+.dashboard {
+    display: flex;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    width: 1500px;
+}
+
+.sidebar {
+    background-color: #060565;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    flex: 1;
+    padding: 90px;
+}
+
+/* Estilos para los enlaces en el menú activo */
+.sidebar a.active {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Estilos para los contenidos del dashboard (puedes personalizar estos estilos según tus necesidades) */
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Agrega estilos adicionales según tus preferencias */
+
+
+
+/* Estilos para la cabecera de Inicio */
+.inicio-header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0px;
+    text-align: left; /* Alineación a la izquierda */
+    position: absolute;
+    top: 0px; /* Igualar a la altura de la barra de menú */
+    left: 290px; /* Igualar al ancho de la barra del menú para que choque con ella */
+    right: 0;
+    z-index: 1; /* Asegura que esté sobre el contenido del menú */
+}
+h2{
+    margin-left: 40px;
+}
+
+/* Estilos para la sección de Noticias */
+.noticias {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-left: 20px; /* Agregamos margen izquierdo */
+    margin-right: 20px; /* Agregamos margen derecho */
+}
+
+/* Estilos para el Horario de Clases en el lado derecho */
+.horario {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para el cuadro */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 300px;
+}
+
+.horario h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.horario ul {
+    list-style: none;
+    padding: 0;
+}
+
+.horario-item {
+    display: flex;
+    align-items: center;
+}
+
+.dia {
+    width: 30px; /* Ancho para el día */
+    font-weight: bold;
+}
+
+.linea {
+    width: 3px; /* Ancho para la línea */
+    margin: 10px; /* Espacio entre la línea y el curso */
+    height: 30px; /* Ajusta la altura de la línea */
+}
+.linea-comunicacion {
+    background-color: #ca4dd3; /* Color de la línea para Comunicación */
+}
+
+.linea-matematicas {
+    background-color: #f3ff18; /* Color de la línea para Matemáticas */
+}
+.linea-geografia {
+    background-color: #3184a5; /* Color de la línea para Matemáticas */
+}
+.linea-fisica {
+    background-color: #1ea419; /* Color de la línea para Matemáticas */
+}
+.linea-lenguaje {
+    background-color: #e34a63; /* Color de la línea para Matemáticas */
+}
+
+.curso {
+    flex: 1;
+}
+
+.curso strong {
+    color: #007BFF;
+}
+
+
+

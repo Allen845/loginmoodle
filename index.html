@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="shortcut icon" href="icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/63de5d1655.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay">
+        <!-- Login -->
+        <div class="container">
+            <div class="signin-signup">
+                <form action="index.php" method="POST" class="sign-in-form" onsubmit="return validateForm()">
+                    <h2 class="title">Iniciar Sesión</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Usuario" name="username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Contraseña" name="password">
+                    </div>
+                    <input type="submit" value="Iniciar Sesión" class="btn">
+                    <p class="social-text">O Siguenos en Nuestras Redes Sociales</p>
+            
+                 <div class="social-media">
+                    <a href="https://www.facebook.com" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>        </form>
+        <form action="" class="sign-up-form">
+        </form>
+    </div>
+    <div class="panels-container">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3></h3>
+                <p></p>
+                        </div>
+            <img src=" alt="" class="image">
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <img src="">
+            </div>
+            <img src="logo.png" width="390px" style="margin-top: -180px;">
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var usuario = document.getElementsByName("UserName")[0].value;
+            var contrasena = document.getElementsByName("UserPass")[0].value;
+
+            
+            if (usuario === '' || contrasena === '') {
+                alert("Debes ingresar un usuario y contraseña");
+                return false; // Evita que se envíe el formulario si los campos están vacíos
+            }
+
+        }
+    </script>
+
+    <script src="js/app.js"></script>   
+</body>
+</html>
